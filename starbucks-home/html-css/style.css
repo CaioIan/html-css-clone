@@ -5,6 +5,13 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.navBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.288);
+}
 
 .center{
   display: flex;
@@ -12,6 +19,7 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 2%;
+  padding-top: 4px;
 }
 
 html,body{
@@ -22,24 +30,35 @@ html,body{
 
 header{
   height: 200px;
-  padding: 20px 0;
 }
 
+
 .logo{
-  width: 50%;
+  width: 70px;
 }
 
 .menu{
   width: 50%;
   text-align: right;
-  padding-top: 30px;
 }
 
 .menu a {
   color: black;
   text-decoration: none;
-  font-weight: bold 20px;
-  margin-right: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  margin-left: 15px;
+}
+
+.menu a:hover{
+  color: #00884f;
+}
+
+.text-flex{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 6%;
 }
 
 section.sobre{
@@ -76,6 +95,7 @@ section.sobre{
 
 .about-text h1{
   font-size: 50px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .about-text p{
@@ -85,20 +105,21 @@ section.sobre{
 }
 
 .about-text button{
-  background-color: #2A7242;
+  background-color: #017143;
   width: 120px;
   height: 40px;
   border-radius: 40px;
   border: none;
-  font-size: 16px;
+  font-size: 25px;
   color: white;
-  font-weight: 500;
+  font-weight: 800;
+  letter-spacing: 1px;
   cursor: pointer;
-  margin-top: 20px;
+  font-family: 'Dongle', sans-serif;
 }
 
 .about-text button:hover{
-  background-color:#2A7242;
+  background-color:#017143;
   animation-name: greenPointer;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
@@ -106,10 +127,16 @@ section.sobre{
 
 @keyframes greenPointer{
   100%{
-    background-color:#205331;
+    background-color:#004b2c;
   }
 }
 
+.about-text p {
+  font-family: 'Dongle', sans-serif;
+  font-size: 25px;
+  line-height: 25px;
+}
+
 .coffeeImage{
-  width: 300px;
+  width: 350dpx;
 }
