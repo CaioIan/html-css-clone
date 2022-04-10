@@ -68,11 +68,11 @@ section.sobre{
 
 .extras{
   position: absolute;
-  bottom: -370px;
-  right: -350px;
-  width: 900px;
-  height: 900px;
-  border-radius: 50%;
+  bottom: -400px;
+  right: -200px;
+  width: 600px;
+  height: 330px;
+  border-radius: 0%;
   background-color: #017143;
 
 }
@@ -85,8 +85,8 @@ section.sobre{
 
 .social-media img{
     display: block;
-    width: 20px;
-    margin: 30px 0;
+    width: 60px;
+    margin: 60px 0;
 }
 
 .about-text{
@@ -137,5 +137,61 @@ section.sobre{
 }
 
 .coffeeImage{
-  width: 350dpx;
+  width: 350px;
+}
+
+.extras{
+  position: absolute;
+  bottom: -370px;
+  right: -350px;
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+  background-color: #017143;
+
+}
+
+@media (max-width: 400px) {
+  html,body{
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  header{
+    height: 100px;
+  }
+
+  .navBox{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.288);
+  }
+
+  .menu{
+    width: 100%;
+  }
+
+  .extras{
+    position: absolute;
+    bottom: -400px;
+    right: -360px;
+    width: 600px;
+    height: 300px;
+    border-radius: 0%;
+    background-color: #ffffff;
+  }
+
+  .coffeeImage{
+    position: relative;
+    width: 200px;
+    right: 50px;
+  }
+
+  .social-media img{
+    display: block;
+    width: 40px;
+    margin: 10px 0;
+}
 }
