@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.288);
+}
+
+.center{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2%;
+  padding-top: 4px;
+}
+
+html,body{
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+header{
+  height: 200px;
+}
+
+
+.logo{
+  width: 70px;
+}
+
+.menu{
+  width: 50%;
+  text-align: right;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  margin-left: 15px;
+}
+
+.menu a:hover{
+  color: #00884f;
+}
+
+.text-flex{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 6%;
+}
+
+section.sobre{
+  height: calc(100% - 200px);
+  position: relative;
+}
+
+.extras{
+  position: absolute;
+  bottom: -370px;
+  right: -350px;
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+  background-color: #017143;
+
+}
+
+.social-media{
+  position: absolute;
+  right: 370px;
+  top: 100px;
+}
+
+.social-media img{
+    display: block;
+    width: 20px;
+    margin: 30px 0;
+}
+
+.about-text{
+  margin-top: 10px;
+}
+
+.about-text h1{
+  font-size: 50px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.about-text p{
+  max-width: 500px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.about-text button{
+  background-color: #017143;
+  width: 120px;
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  font-size: 25px;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-family: 'Dongle', sans-serif;
+}
+
+.about-text button:hover{
+  background-color:#017143;
+  animation-name: greenPointer;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes greenPointer{
+  100%{
+    background-color:#004b2c;
+  }
+}
+
+.about-text p {
+  font-family: 'Dongle', sans-serif;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.coffeeImage{
+  width: 350dpx;
+}
